@@ -1,10 +1,10 @@
 package Graph;
 
-import Point.Point;
-import Point.Point_of_production;
-import Point.Point_of_sale;
-import Car.Car;
-import Road.Road;
+import entity.Point;
+import entity.Point_of_production;
+import entity.Point_of_sale;
+import entity.Car;
+import entity.Road;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,21 +30,25 @@ public class Graph_generation {
     public List<Car> car_generation(int number_of_car){
         List<Car> list_car = new ArrayList<>();
         for (int i =0;i<number_of_car;i++){
-            Car a =new Car("name "+i,2);
+//            Car a =new Car("name "+i,2);
+            Car a =new Car();
             list_car.add(a);
         }
         return list_car;
     }
     //генерация точек
     public List<Point> generating_points(int points){
-        Point_of_sale point_of_sale =new Point_of_sale("name "+1, random_int());
+//        Point_of_sale point_of_sale =new Point_of_sale("name "+1, random_int());
+        Point_of_sale point_of_sale =new Point_of_sale();
         List<Point> list_points = new ArrayList<>();
         list_points.add(point_of_sale);
         for (int i =1 ; i<points-1 ; i++){
-            Point a =new Point("name "+i);
+//            Point a =new Point("name "+i);
+            Point a =new Point();
             list_points.add(a);
         }
-        Point_of_production point_of_production =new Point_of_production("name "+points, random_int());
+//        Point_of_production point_of_production =new Point_of_production("name "+points, random_int());
+        Point_of_production point_of_production =new Point_of_production();
         list_points.add(point_of_production);
         return list_points;
     }
@@ -62,7 +66,8 @@ public class Graph_generation {
                 number_1 =list_points.size();
             }
             number_2 =numbers_without_repetitions(number_1,list_points.size());
-            Road a =new Road("name "+i, random_int() , number_1 , number_2 );
+            Road a =new Road();
+//            Road a =new Road( " name "+i, random_int() , number_1 , number_2 );
             list_roads.add(a);
         }
         return list_roads;

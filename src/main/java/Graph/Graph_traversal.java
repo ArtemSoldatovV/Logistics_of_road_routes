@@ -1,7 +1,7 @@
 package Graph;
 
-import Point.Point;
-import Road.Road;
+import entity.Point;
+import entity.Road;
 
 import java.util.ArrayList;
 import java.util.List;

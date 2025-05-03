@@ -1,12 +1,12 @@
 package Graph;
 
-import Car.Car;
-import Point.Point;
-import Road.Road;
+import entity.Car;
+import entity.Point;
+import entity.Road;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//main Graph
 public class Graph_constructor {
     private List<Car> list_car = new ArrayList<>();
     private List<Point> list_points = new ArrayList<>();
