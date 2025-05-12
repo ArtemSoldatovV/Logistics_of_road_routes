@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CarService {
     @Autowired
-    private CarRepository userRepository;
+    private CarRepository carRepository;
     @Autowired
     private MappingUtils mappingUtils;
 }

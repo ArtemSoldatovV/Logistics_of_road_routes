@@ -8,7 +8,7 @@ import repository.RoadRepository;
 @Service
 public class RoadService {
     @Autowired
-    private RoadRepository userRepository;
+    private RoadRepository roadRepository;
     @Autowired
     private MappingUtils mappingUtils;
 }

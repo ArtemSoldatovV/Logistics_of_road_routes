@@ -18,7 +18,7 @@ public class AuthController {
     }
 
     private boolean isValidUser(LoginRequest loginRequest) {
-        // Ваша логика проверки пользователя
+        // логика проверки пользователя
         return "user".equals(loginRequest.getUsername()) && "password".equals(loginRequest.getPassword());
     }
 }

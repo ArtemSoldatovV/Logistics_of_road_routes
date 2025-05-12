@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class PointService {
     @Autowired
-    private PointRepository userRepository;
+    private PointRepository pointRepository;
     @Autowired
     private MappingUtils mappingUtils;
 }
