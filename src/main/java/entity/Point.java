@@ -8,7 +8,7 @@ public class Point extends Abstract_point {
 //    private static int idCounter = 0;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(name = "name")
     private String name;
 
@@ -17,11 +17,11 @@ public class Point extends Abstract_point {
 //        this.name=name;
 //    }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -1,7 +1,7 @@
 package entity;
 
 public class Point_of_productionDTO {
-    private int id;
+    private Long id;
     private String name;
     private int production;
 
@@ -10,11 +10,11 @@ public class Point_of_productionDTO {
 //        this.production=production;
 //    }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

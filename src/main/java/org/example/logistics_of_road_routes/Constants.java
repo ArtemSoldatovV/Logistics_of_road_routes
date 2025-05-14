@@ -2,6 +2,7 @@ package org.example.logistics_of_road_routes;
 
 public class Constants {
     //ошибки
+    public static final String USER_NOT_FOUND = "Пользователь не найден.";
     public static final String ROAD_NOT_FOUND = "Дорога не найдена";
     public static final String CAR_NOT_FOUND = "Мошина не найдена";
     public static final String POINT_NOT_FOUND = "Точка не найдена";

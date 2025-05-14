@@ -8,7 +8,7 @@ public class Road {
 //    private static int idCounter = 0;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(name = "name")
     private String name;
     @Column(name = "score_throughput_capacity")
@@ -26,11 +26,11 @@ public class Road {
 //        this.pointt_2=pointt_2;
 //    }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {this.id = id;}
+    public void setId(Long id) {this.id = id;}
 
     public String getName() {
         return name;

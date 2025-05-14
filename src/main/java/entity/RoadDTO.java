@@ -1,7 +1,7 @@
 package entity;
 
 public class RoadDTO {
-    private int id;
+    private Long id;
     private String name;
     private int score_throughput_capacity; //пропускная способность
     private int pointt_1;
@@ -15,11 +15,11 @@ public class RoadDTO {
 //        this.pointt_2=pointt_2;
 //    }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
